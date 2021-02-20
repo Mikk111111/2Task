@@ -1,20 +1,17 @@
-#include <iostream>
 #include <fstream>
+#include <iostream>
 using namespace std;
-
 int main()
 {
-    int size 10001;
-    int arr[size];
-
+    cout << "test1";
     ifstream myfile;
-    myfile.open("TextFile1.txt");
-    for (int i = 0; i < size; i++)
-        (
-            myfile >> arr[i];
-    )
-
-        myfile.close();
-
+    myfile.open("TextFile0.txt");
+    if (!myfile)return 0;
+    int temp;
+    myfile >> temp;
+    cout << "test2";
+    cout << temp;
+    myfile.close();
+    cout << "test3";
+    cout.flush();
 }
-
