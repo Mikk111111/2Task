@@ -12,9 +12,9 @@ int main()
     for (int i = 0; i < size; i++)
         (
             myfile >> arr[i];
-            )
-    
-    myfile.close();
+    )
+
+        myfile.close();
 
 }
 
